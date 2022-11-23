@@ -1,0 +1,28 @@
+#board {
+    height: 500px; 
+    width: 500px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 20px; 
+}
+
+.card {
+    height: 100%; 
+    width: 100%; 
+    background: darkslategray; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.card-front {
+    position: absolute; 
+    background: darkslategrey; 
+}
+
+.card-back {
+    position: absolute; 
+    background: rgb(223, 223, 223); 
+}
+
+    
