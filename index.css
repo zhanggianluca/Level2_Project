@@ -1,28 +1,65 @@
+/*#C5FFFD
+#88D9E6
+#2A2B2E
+#5A5A66
+White
+*/
+
+body {
+    background: #2A2B2E;
+}
+
 #board {
+    background: rgba(130, 130, 130, 0.5);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     height: 500px; 
     width: 500px; 
     display: grid; 
+    margin: auto; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr; 
     gap: 20px; 
+    padding: 20px; 
+    border-radius: 5px; 
+    backdrop-filter: blur(6px);
+}
+
+#title {
+    font-family: 'Eczar'; 
+    font-size: 60px; 
+    font-weight: 700; 
+    color: #C5FFFD; 
+    text-align: center; 
+    margin-bottom: 0px; 
+}
+
+#instruct {
+    padding-bottom: 45px; 
+    font-family: 'Eczar'; 
+    color: white; 
+    font-weight: 300; 
+    font-size: 20px; 
+    text-align: center; 
 }
 
 .card {
     height: 100%; 
     width: 100%; 
-    background: darkslategray; 
+    background: #88D9E6; 
+    border-color: black; 
+    border-width: 3px;
     border-radius: 5px; 
-    cursor: pointer; 
+    cursor: pointer;  
 }
 
 .card-front {
     position: absolute; 
-    background: darkslategrey; 
+    background: #C5FFFD; 
 }
 
 .card-back {
     position: absolute; 
-    background: rgb(223, 223, 223); 
+    background: #C5FFFD; 
 }
 
     
