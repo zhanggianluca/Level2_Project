@@ -45,21 +45,58 @@ body {
 .card {
     height: 100%; 
     width: 100%; 
-    background: #88D9E6; 
-    border-color: black; 
-    border-width: 3px;
     border-radius: 5px; 
+    position: relative; 
     cursor: pointer;  
 }
 
-.card-front {
+.card-front, .card-back {
+    height: 100%; 
+    width: 100%; 
     position: absolute; 
-    background: #C5FFFD; 
+    border-radius: 5px; 
+}
+
+.card-front {
+    background-color:#88D9E6; 
 }
 
 .card-back {
-    position: absolute; 
-    background: #C5FFFD; 
+    background:#C5FFFD; 
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 115px; 
+    font-size: 30px; 
+    visibility: hidden;
 }
 
+#scoreboard {
+    font-family: 'Eczar'; 
+    font-size: 40px; 
+    font-weight: 700; 
+    color: #C5FFFD; 
+    text-align: center; 
+}
+
+#score {
+    font-family: 'Eczar'; 
+    font-size: 40px; 
+    font-weight: 700; 
+    color: white; 
+}
+
+#reset {
+    background-color: #88D9E6; 
+    border: none; 
+    color: #2A2B2E; 
+    font-family: 'Eczar'; 
+    font-size: 30px; 
+    font-weight: 700; 
+    text-decoration: none; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 10px 40px; 
+    cursor: pointer; 
+}
     
